@@ -20,7 +20,7 @@ a {
 }
 
 .main_container {
-  @apply flex flex-col h-screen justify-between mx-auto p-6;
+  @apply flex flex-col bg-gray-100 h-screen justify-between mx-auto p-6;
 }
 
 .dropzone {

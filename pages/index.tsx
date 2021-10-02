@@ -144,9 +144,19 @@ const Home: NextPage = () => {
         {/* <p className="text-center mt-6">Upload Complete Component</p> */}
         {success && <UploadPreview imageUrl={imageUrl} />}
 
-        <footer className="bottom-0 mt-3">
+        <footer className="bottom-0 my-3">
           <div className="flex justify-center mb-0">
-            <p className="text-center">Designed & Developped by Carl Nolan.</p>
+            <p className="text-center font-mono tracking-tight">
+              Designed & Developped by{" "}
+              <a
+                href="https://carlnolan.lootyclub.com"
+                target="_blank"
+                rel="noreferrer"
+                className="text-blue-400 hover:text-blue-600 transition"
+              >
+                Carl Nolan.
+              </a>
+            </p>
           </div>
         </footer>
       </div>

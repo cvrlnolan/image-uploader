@@ -2,7 +2,7 @@
 
 A Next.js (TypeScript) solution for the [Image Uploader Challenge](https://devchallenges.io/challenges/O2iGT9yBd6xZBrOcVirx) on [devChallenges](https://devchallenges.io/).
 
-Live demon(version) available at: https://image-uploader-taupe.vercel.app/
+Live demo (version) available at: https://image-uploader-taupe.vercel.app/
 
 ## Description
 

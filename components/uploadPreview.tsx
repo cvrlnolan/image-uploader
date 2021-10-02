@@ -14,7 +14,7 @@ const UploadPreview = ({ imageUrl }: Props) => {
     <>
       <div className="flex justify-center min-w-1/2">
         <div className="preview_wrapper">
-          <CheckCircleIcon className="text-green-100 mx-auto w-12 h-12" />
+          <CheckCircleIcon className="text-green-200 mx-auto w-12 h-12" />
           <p className="font-light text-center">Upload Successful</p>
           <div className="preview_img_box">
             <Image
