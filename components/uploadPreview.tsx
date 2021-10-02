@@ -22,7 +22,7 @@ const UploadPreview = ({ imageUrl }: Props) => {
               src={imageUrl}
               layout="fill"
               objectFit="cover"
-              className="preview_img"
+              className="rounded-lg shadow-lg"
             />
           </div>
           <div className="preview_link_container">

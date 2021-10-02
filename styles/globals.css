@@ -40,11 +40,7 @@ a {
 }
 
 .preview_img_box {
-  @apply w-32 h-32 md:w-52 md:h-52 lg:w-96 lg:h-96 mx-auto relative;
-}
-
-.preview_img {
-  border-radius: 10px;
+  @apply w-36 h-36 md:w-56 md:h-56 lg:w-96 lg:h-96 mx-auto relative;
 }
 
 .preview_link_container {

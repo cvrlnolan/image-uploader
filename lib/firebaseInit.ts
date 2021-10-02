@@ -10,8 +10,10 @@ const clientCredentials = {
 };
 
 function initFirebase() {
-  initializeApp(clientCredentials);
-  console.log("Firebase has been init successfully");
+  if (typeof window !== undefined) {
+    initializeApp(clientCredentials);
+    console.log("Firebase has been init successfully");
+  }
 }
 
 export default initFirebase;

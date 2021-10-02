@@ -115,10 +115,7 @@ const Home: NextPage = () => {
               <p className="text-center font-light">
                 File should be jpeg, png...
               </p>
-              <div
-                {...getRootProps()}
-                className="drag_drop_wrapper"
-              >
+              <div {...getRootProps()} className="drag_drop_wrapper">
                 <input hidden {...getInputProps()} />
                 <PhotographIcon className="w-16 h-16 self-center text-blue-200" />
                 {isDragActive ? (
@@ -133,10 +130,7 @@ const Home: NextPage = () => {
               </div>
               <p className="text-center font-light">Or</p>
               <div className="flex justify-center">
-                <button
-                  onClick={open}
-                  className="dropzone_button"
-                >
+                <button onClick={open} className="dropzone_button">
                   Choose a file
                 </button>
               </div>
