@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.main_container {
+  @apply flex flex-col h-screen justify-between mx-auto p-6;
+}
+
+.dropzone {
+  @apply min-w-min md:w-3/4 lg:w-2/5 rounded overflow-hidden p-6 space-y-3 shadow-lg;
+}
+
+.drag_drop_wrapper {
+  @apply flex flex-col space-y-3 p-3 rounded border-2 border-dashed border-green-200;
+}
+
+.dropzone_button {
+  @apply bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 text-white font-thin py-2 px-4 rounded transition duration-300;
+}
+
+.preview_wrapper {
+  @apply w-full md:w-3/4 lg:w-2/5 rounded p-6 overflow-hidden space-y-3 shadow-lg;
+}
+
+.preview_img_box {
+  @apply w-32 h-32 md:w-52 md:h-52 lg:w-96 lg:h-96 mx-auto relative;
+}
+
+.preview_img {
+  border-radius: 10px;
+}
+
+.preview_link_container {
+  @apply flex w-full h-12 justify-between p-1 border mt-4 rounded-lg;
+}
+
+.preview_copy_button {
+  @apply bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 text-white font-thin py-2 px-4 rounded transition duration-300;
+}
+
+.progress_wrapper {
+  @apply w-full lg:w-3/4 rounded overflow-hidden p-6 space-y-2 shadow-lg;
+}
