@@ -9,7 +9,7 @@ Live demo (version) available at: https://image-uploader-taupe.vercel.app/
 This project was built to complete all the user stories listed or described by the challenge itself. Hence in this project, a user can:
 
 - Drag and drop an image to upload it
-- Cchoose to select an image from any folder
+- Choose to select an image from any folder
 - See a loader when uploading
 - Can see the uploaded image and copy it
 - Choose to copy to the clipboard
