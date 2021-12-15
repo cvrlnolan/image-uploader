@@ -7,7 +7,7 @@ type Props = {
 const UploadProgress = ({ progress }: Props) => {
   return (
     <>
-      <div className="flex justify-center mt-4">
+      <div className="flex w-full justify-center mt-4">
         <div className="progress_wrapper">
           <p className="font-light">Uploading...</p>
           <div className="flex h-1 w-full rounded bg-gray-200">

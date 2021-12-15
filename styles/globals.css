@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Source+Sans+Pro&display=swap");
+
 html,
 body {
   padding: 0;
@@ -20,31 +22,31 @@ a {
 }
 
 .main_container {
-  @apply flex flex-col bg-gray-100 h-screen justify-between mx-auto p-6;
+  @apply flex flex-col w-full bg-gray-100 min-h-screen justify-between p-6;
 }
 
 .dropzone {
-  @apply min-w-min md:w-3/4 lg:w-2/5 rounded overflow-hidden p-6 space-y-3 shadow-lg;
+  @apply w-full md:w-3/4 lg:w-2/5 p-6 space-y-3 text-center rounded overflow-hidden shadow-lg;
 }
 
 .drag_drop_wrapper {
-  @apply flex flex-col space-y-3 p-3 rounded border-2 border-dashed border-green-200;
+  @apply flex flex-col space-y-3 p-3 text-center items-center rounded border-2 border-dashed border-green-200;
 }
 
 .dropzone_button {
-  @apply bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 text-white font-thin py-2 px-4 rounded transition duration-300;
+  @apply bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:ring-blue-200 text-white py-2 px-4 rounded transition duration-300;
 }
 
 .preview_wrapper {
-  @apply w-full md:w-3/4 lg:w-2/5 rounded p-6 overflow-hidden space-y-3 shadow-lg;
+  @apply w-full md:w-3/4 lg:w-2/5 rounded p-6 items-center overflow-hidden space-y-3 shadow-lg;
 }
 
 .preview_img_box {
-  @apply w-36 h-36 md:w-56 md:h-56 lg:w-96 lg:h-96 mx-auto relative;
+  @apply w-36 h-36 md:w-56 md:h-56 lg:w-80 lg:h-80 rounded-lg mx-auto relative;
 }
 
 .preview_link_container {
-  @apply flex w-full h-12 justify-between p-1 border mt-4 rounded-lg;
+  @apply flex w-full h-12 justify-between items-center p-1 border mt-4 rounded-lg;
 }
 
 .preview_copy_button {

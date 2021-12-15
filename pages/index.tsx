@@ -105,31 +105,24 @@ const Home: NextPage = () => {
         <title>Image Uploader</title>
       </Head>
       <div className="main_container">
-        {/* <p className="text-center">Image Upload Component</p> */}
         {!success && (
           <div
             className={` ${loading ? "hidden" : ""} flex justify-center mt-10`}
           >
             <div className="dropzone">
-              <p className="text-center font-bold">Upload your image</p>
-              <p className="text-center font-light">
-                File should be jpeg, png...
-              </p>
+              <p className="font-bold">Upload your image</p>
+              <p>File should be jpeg, png...</p>
               <div {...getRootProps()} className="drag_drop_wrapper">
                 <input hidden {...getInputProps()} />
-                <PhotographIcon className="w-16 h-16 self-center text-blue-200" />
+                <PhotographIcon className="w-16 h-16 text-blue-200" />
                 {isDragActive ? (
-                  <p className="text-center font-light">
-                    Drop the photo here...
-                  </p>
+                  <p>Drop the photo here...</p>
                 ) : (
-                  <p className="text-center font-light">
-                    Drag & Drop your image here
-                  </p>
+                  <p>Drag & Drop your image here</p>
                 )}
               </div>
-              <p className="text-center font-light">Or</p>
-              <div className="flex justify-center">
+              <p>Or</p>
+              <div className="flex w-full justify-center">
                 <button onClick={open} className="dropzone_button">
                   Choose a file
                 </button>
@@ -138,15 +131,13 @@ const Home: NextPage = () => {
           </div>
         )}
 
-        {/* <p className="text-center mt-6">Upload Progress Component</p> */}
         {loading && <UploadProgress progress={progress} />}
 
-        {/* <p className="text-center mt-6">Upload Complete Component</p> */}
         {success && <UploadPreview imageUrl={imageUrl} />}
 
         <footer className="bottom-0 my-3">
-          <div className="flex justify-center mb-0">
-            <p className="text-center font-mono tracking-tight">
+          <div className="flex w-full justify-center mb-0">
+            <p className="text-center tracking-tight">
               Designed & Developped by{" "}
               <a
                 href="https://carlnolan.lootyclub.com"
